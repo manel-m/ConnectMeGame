@@ -14,7 +14,6 @@
 		9905DCEA233D6BE80032C53D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905DCE9233D6BE80032C53D /* GameViewController.swift */; };
 		9905DCED233D6BE90032C53D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9905DCEB233D6BE90032C53D /* Main.storyboard */; };
 		9905DCEF233D6BF20032C53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9905DCEE233D6BF20032C53D /* Assets.xcassets */; };
-		9905DCF2233D6BF20032C53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9905DCF0233D6BF20032C53D /* LaunchScreen.storyboard */; };
 		9905DCFA23430F150032C53D /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905DCF923430F150032C53D /* Grid.swift */; };
 		9905DCFC234ED5220032C53D /* BlockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905DCFB234ED5210032C53D /* BlockNode.swift */; };
 		9926018E23A9F1F10061FF15 /* MusicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9926018D23A9F1F10061FF15 /* MusicButton.swift */; };
@@ -26,6 +25,7 @@
 		9926019E23AB39C10061FF15 /* LevelsSelector.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9926019D23AB39C10061FF15 /* LevelsSelector.sks */; };
 		992601A023AC55BB0061FF15 /* SelectLevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9926019F23AC55BB0061FF15 /* SelectLevelButton.swift */; };
 		992601A223AC5A160061FF15 /* LabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992601A123AC5A160061FF15 /* LabelNode.swift */; };
+		9930198423D194B900B7B822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9930198323D194B900B7B822 /* LaunchScreen.storyboard */; };
 		9958522623A9E9870031C671 /* Home.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9958522523A9E9870031C671 /* Home.sks */; };
 		995D57D223625D5700D1FE73 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D57D123625D5600D1FE73 /* Cell.swift */; };
 		995D57D42368F7AA00D1FE73 /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D57D32368F7AA00D1FE73 /* Levels.swift */; };
@@ -63,7 +63,6 @@
 		9905DCE9233D6BE80032C53D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9905DCEC233D6BE90032C53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9905DCEE233D6BF20032C53D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9905DCF1233D6BF20032C53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9905DCF3233D6BF20032C53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9905DCF923430F150032C53D /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		9905DCFB234ED5210032C53D /* BlockNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNode.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		9926019D23AB39C10061FF15 /* LevelsSelector.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelsSelector.sks; sourceTree = "<group>"; };
 		9926019F23AC55BB0061FF15 /* SelectLevelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelButton.swift; sourceTree = "<group>"; };
 		992601A123AC5A160061FF15 /* LabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelNode.swift; sourceTree = "<group>"; };
+		9930198323D194B900B7B822 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9958522523A9E9870031C671 /* Home.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Home.sks; sourceTree = "<group>"; };
 		995D57D123625D5600D1FE73 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		995D57D32368F7AA00D1FE73 /* Levels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 				995D57D32368F7AA00D1FE73 /* Levels.swift */,
 				9905DCEB233D6BE90032C53D /* Main.storyboard */,
 				9905DCEE233D6BF20032C53D /* Assets.xcassets */,
-				9905DCF0233D6BF20032C53D /* LaunchScreen.storyboard */,
 				9905DCF3233D6BF20032C53D /* Info.plist */,
+				9930198323D194B900B7B822 /* LaunchScreen.storyboard */,
 			);
 			path = ConnectMe;
 			sourceTree = "<group>";
@@ -281,6 +281,7 @@
 				9958522623A9E9870031C671 /* Home.sks in Resources */,
 				9926019E23AB39C10061FF15 /* LevelsSelector.sks in Resources */,
 				9905DCE4233D6BE80032C53D /* GameScene.sks in Resources */,
+				9930198423D194B900B7B822 /* LaunchScreen.storyboard in Resources */,
 				9905DCEF233D6BF20032C53D /* Assets.xcassets in Resources */,
 				9980972D23B44F9800C88848 /* LevelsSelector5.sks in Resources */,
 				995D57E123694DE600D1FE73 /* hitCat.wav in Resources */,
@@ -288,7 +289,6 @@
 				9980971B23B1A4C400C88848 /* LevelsSelector2.sks in Resources */,
 				995D57DF23694DE600D1FE73 /* win.wav in Resources */,
 				995D57E223694DE600D1FE73 /* hitCatLady.wav in Resources */,
-				9905DCF2233D6BF20032C53D /* LaunchScreen.storyboard in Resources */,
 				995D57E323694DE600D1FE73 /* backgroundMusic1.mp3 in Resources */,
 				9905DCE6233D6BE80032C53D /* Actions.sks in Resources */,
 			);
@@ -341,14 +341,6 @@
 				9905DCEC233D6BE90032C53D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9905DCF0233D6BF20032C53D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9905DCF1233D6BF20032C53D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
