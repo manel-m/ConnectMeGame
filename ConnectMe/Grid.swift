@@ -103,41 +103,29 @@ class Grid:SKSpriteNode {
     
     func checkWinCondition() {
         var gameWon = true
+        // loop over all children
         enumerateChildNodes(withName: "./*", using: { node, _ in
-//            print(node.name)
             let c = self.toRowCol(location: node.position)// convert node position to cell (row, col)
-            var alone = true // node has no neighbors
-            // check left block of node (c)
-            if let leftBlock = self.findBlock (cell: c.left()) {// if find block on the the left ==> alone = false
-                // if they don't have same color ==> game won = false
-                if (leftBlock.name != node.name)  {
+
+            // count how many neighbors this node has
+            var numNeighbors = 0
+            if self.findBlock (cell: c.left()) != nil {
+                numNeighbors += 1
+            }
+            if self.findBlock (cell: c.right()) != nil {
+                numNeighbors += 1
+            }
+            if self.findBlock (cell: c.up()) != nil {
+                numNeighbors += 1
+            }
+            if self.findBlock (cell: c.down()) != nil {
+                numNeighbors += 1
+            }
+            // game is won if all blocks have same number of neighbors as their num
+            if let block = node as? BlockNode {
+                if block.num != numNeighbors {
                     gameWon = false
                 }
-                alone = false
-            }
-            if let rightBlock = self.findBlock (cell: c.right()){
-                if rightBlock.name != node.name {
-                    gameWon = false
-                }
-                alone = false
-            }
-           
-            if let upBlock = self.findBlock (cell: c.up()){
-                if upBlock.name != node.name {
-                    gameWon = false
-                }
-                alone = false
-            }
-           
-            if let downBlock = self.findBlock (cell: c.down()){
-                if downBlock.name != node.name {
-                    gameWon = false
-                }
-                alone = false
-            }
-            // if alone = true and it's not black ==> game won = false
-            if alone && (node.name != "black") {
-                gameWon = false
             }
         })
         // if gameWon = true send it to win delegate

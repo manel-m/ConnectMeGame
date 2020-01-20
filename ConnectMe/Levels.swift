@@ -15,7 +15,7 @@ class Levels {
     // random seed 1573399154514
     static let levels: [String] = [
        "_________1__1____________",
-       "__211__1_________________"
+       "__211__2_________________"
     ]
 
     static func loadLevel(grid:Grid, str: String) {

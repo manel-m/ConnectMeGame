@@ -17,6 +17,7 @@ class BlockNode: SKSpriteNode , EventListenerNode {
     // call it in Gamescene.didMove
     func didMoveToScene() {
         zPosition = 1
+        self.isUserInteractionEnabled = true
     }
     
     // sritekit will call this method when player touchs block
