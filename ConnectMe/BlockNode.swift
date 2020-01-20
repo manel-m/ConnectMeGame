@@ -12,13 +12,11 @@ import SpriteKit
 class BlockNode: SKSpriteNode , EventListenerNode {
     
     var beforeDrag: CGPoint = CGPoint();
-    
+    public var num:Int = 0
+
     // call it in Gamescene.didMove
     func didMoveToScene() {
         zPosition = 1
-        if name != "black" {
-            isUserInteractionEnabled = true
-        }
     }
     
     // sritekit will call this method when player touchs block
