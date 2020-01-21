@@ -25,7 +25,6 @@
 		9926019E23AB39C10061FF15 /* LevelsSelector.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9926019D23AB39C10061FF15 /* LevelsSelector.sks */; };
 		992601A023AC55BB0061FF15 /* SelectLevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9926019F23AC55BB0061FF15 /* SelectLevelButton.swift */; };
 		992601A223AC5A160061FF15 /* LabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992601A123AC5A160061FF15 /* LabelNode.swift */; };
-		9930198423D194B900B7B822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9930198323D194B900B7B822 /* LaunchScreen.storyboard */; };
 		9958522623A9E9870031C671 /* Home.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9958522523A9E9870031C671 /* Home.sks */; };
 		995D57D223625D5700D1FE73 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D57D123625D5600D1FE73 /* Cell.swift */; };
 		995D57D42368F7AA00D1FE73 /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D57D32368F7AA00D1FE73 /* Levels.swift */; };
@@ -52,6 +51,7 @@
 		9980972D23B44F9800C88848 /* LevelsSelector5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9980972C23B44F9800C88848 /* LevelsSelector5.sks */; };
 		9980972F23B450F300C88848 /* PrevLevelButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980972E23B450F300C88848 /* PrevLevelButton4.swift */; };
 		9980973123B4516F00C88848 /* NextLevelButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980973023B4516F00C88848 /* NextLevelButton4.swift */; };
+		99FBB87223D67AA100C106EB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FBB87123D67AA100C106EB /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +75,6 @@
 		9926019D23AB39C10061FF15 /* LevelsSelector.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelsSelector.sks; sourceTree = "<group>"; };
 		9926019F23AC55BB0061FF15 /* SelectLevelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelButton.swift; sourceTree = "<group>"; };
 		992601A123AC5A160061FF15 /* LabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelNode.swift; sourceTree = "<group>"; };
-		9930198323D194B900B7B822 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9958522523A9E9870031C671 /* Home.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Home.sks; sourceTree = "<group>"; };
 		995D57D123625D5600D1FE73 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		995D57D32368F7AA00D1FE73 /* Levels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		9980972C23B44F9800C88848 /* LevelsSelector5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelsSelector5.sks; sourceTree = "<group>"; };
 		9980972E23B450F300C88848 /* PrevLevelButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevLevelButton4.swift; sourceTree = "<group>"; };
 		9980973023B4516F00C88848 /* NextLevelButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLevelButton4.swift; sourceTree = "<group>"; };
+		99FBB87123D67AA100C106EB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 				9905DCEB233D6BE90032C53D /* Main.storyboard */,
 				9905DCEE233D6BF20032C53D /* Assets.xcassets */,
 				9905DCF3233D6BF20032C53D /* Info.plist */,
-				9930198323D194B900B7B822 /* LaunchScreen.storyboard */,
+				99FBB87123D67AA100C106EB /* Launch Screen.storyboard */,
 			);
 			path = ConnectMe;
 			sourceTree = "<group>";
@@ -276,12 +276,12 @@
 			files = (
 				995D57E72369518A00D1FE73 /* backgroundMusic.mp3 in Resources */,
 				9905DCED233D6BE90032C53D /* Main.storyboard in Resources */,
+				99FBB87223D67AA100C106EB /* Launch Screen.storyboard in Resources */,
 				9980972723B4389E00C88848 /* LevelsSelector4.sks in Resources */,
 				9980972123B4217A00C88848 /* LevelsSelector3.sks in Resources */,
 				9958522623A9E9870031C671 /* Home.sks in Resources */,
 				9926019E23AB39C10061FF15 /* LevelsSelector.sks in Resources */,
 				9905DCE4233D6BE80032C53D /* GameScene.sks in Resources */,
-				9930198423D194B900B7B822 /* LaunchScreen.storyboard in Resources */,
 				9905DCEF233D6BF20032C53D /* Assets.xcassets in Resources */,
 				9980972D23B44F9800C88848 /* LevelsSelector5.sks in Resources */,
 				995D57E123694DE600D1FE73 /* hitCat.wav in Resources */,
