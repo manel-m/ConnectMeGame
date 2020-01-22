@@ -13,6 +13,7 @@ class BlockNode: SKSpriteNode , EventListenerNode {
     
     var beforeDrag: CGPoint = CGPoint();
     public var num:Int = 0
+    private var count:Int = 0
 
     // call it in Gamescene.didMove
     func didMoveToScene() {
@@ -48,6 +49,16 @@ class BlockNode: SKSpriteNode , EventListenerNode {
                 position = beforeDrag
             }
             zPosition = 1
+        }
+    }
+    
+    public func setNumNeighbors(count: Int) {
+        self.count = count
+        // update texture
+        if count > num {
+            texture = SKTexture(imageNamed: "x-\(num)")
+        } else {
+            texture = SKTexture(imageNamed: "\(count)-\(num)")
         }
     }
 }

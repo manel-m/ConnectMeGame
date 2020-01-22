@@ -91,6 +91,7 @@ class Grid:SKSpriteNode {
         // first check if cell is empty or not
         if findBlock(cell: c) == nil {
             block.position = gridPosition(cell: c)
+            updateNeighbors()
             // call win condition function
             checkWinCondition()
             
@@ -153,6 +154,30 @@ class Grid:SKSpriteNode {
         gamePiece.name = "\(num)"
         gamePiece.num = num
         addChild(gamePiece)
+    }
+    
+    public func updateNeighbors() {
+        enumerateChildNodes(withName: "//*", using: { node, _ in
+            if let block = node as? BlockNode {
+                let c = self.toRowCol(location: node.position)// convert node position to cell (row, col)
+                // count how many neighbors this node has
+                var numNeighbors = 0
+                if self.findBlock (cell: c.left()) != nil {
+                    numNeighbors += 1
+                }
+                if self.findBlock (cell: c.right()) != nil {
+                    numNeighbors += 1
+                }
+                if self.findBlock (cell: c.up()) != nil {
+                    numNeighbors += 1
+                }
+                if self.findBlock (cell: c.down()) != nil {
+                    numNeighbors += 1
+                }
+                block.setNumNeighbors(count: numNeighbors)
+            }
+        })
+
     }
 
 }

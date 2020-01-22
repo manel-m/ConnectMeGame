@@ -54,6 +54,7 @@ class Levels {
                 idx += 1
             }
         }
+        grid.updateNeighbors()
     }
 
 }
