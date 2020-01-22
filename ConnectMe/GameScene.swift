@@ -35,7 +35,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
 
     override func didMove(to: SKView) {
         // add grid to the scene (in case nul : if let)
-        if let grid = Grid(blockSize: 185.0, rows:5, cols:5, delegate: self) {
+        if let grid = Grid(blockSize: 185.0, rows:7, cols:5, delegate: self) {
             GameScene.grid = grid
 
             grid.position = CGPoint (x:frame.midX, y:frame.midY)

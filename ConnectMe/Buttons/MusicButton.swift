@@ -11,8 +11,8 @@ import SpriteKit
 class MusicButton : SKSpriteNode {
     static var musicPaused = false
 
-    let musicOnTexture = SKTexture(imageNamed: "btn-music")
-    let musicOffTexture = SKTexture(imageNamed: "btn-music-off")
+    let musicOnTexture = SKTexture(imageNamed: "music_on")
+    let musicOffTexture = SKTexture(imageNamed: "music_off")
 
     // initialize playButton
     // we need constructor to enable user interaction
