@@ -106,25 +106,9 @@ class Grid:SKSpriteNode {
         var gameWon = true
         // loop over all children
         enumerateChildNodes(withName: "./*", using: { node, _ in
-            let c = self.toRowCol(location: node.position)// convert node position to cell (row, col)
-
-            // count how many neighbors this node has
-            var numNeighbors = 0
-            if self.findBlock (cell: c.left()) != nil {
-                numNeighbors += 1
-            }
-            if self.findBlock (cell: c.right()) != nil {
-                numNeighbors += 1
-            }
-            if self.findBlock (cell: c.up()) != nil {
-                numNeighbors += 1
-            }
-            if self.findBlock (cell: c.down()) != nil {
-                numNeighbors += 1
-            }
-            // game is won if all blocks have same number of neighbors as their num
+            // game is won if all blocks are full
             if let block = node as? BlockNode {
-                if block.num != numNeighbors {
+                if !block.isFull() {
                     gameWon = false
                 }
             }

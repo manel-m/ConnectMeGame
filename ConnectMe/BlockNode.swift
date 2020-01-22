@@ -61,4 +61,8 @@ class BlockNode: SKSpriteNode , EventListenerNode {
             texture = SKTexture(imageNamed: "\(count)-\(num)")
         }
     }
+    
+    public func isFull() -> Bool {
+        return count == num
+    }
 }
