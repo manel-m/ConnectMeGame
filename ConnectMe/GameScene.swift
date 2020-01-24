@@ -43,6 +43,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
             addChild(grid)
             let label = LabelNode(message: "\(GameScene.currentLevel) / 100")
             label.position = CGPoint (x:760, y:1850)
+            label.fontColor = SKColor.orange
             addChild(label)
             
             // add levels to the scene
@@ -61,7 +62,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         let playableMargin: CGFloat = (size.height - maxAspectRatioHeight)/2
         let playableRect = CGRect(x: 0, y: playableMargin, width: size.width, height: size.height-playableMargin*2)
         
-        // physics for label "Nice job"
+        // physics for label "Well Done"
         physicsBody = SKPhysicsBody(edgeLoopFrom: playableRect)
         physicsWorld.contactDelegate = self
         physicsBody!.categoryBitMask = PhysicsCategory.Edge
@@ -76,7 +77,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     // if the player win
     func gameWon() {
         run(SKAction.afterDelay(3, runBlock: newGame)) // show the next level after 3 seconds
-        inGameMessage(text: "Nice job!")// show win label
+        inGameMessage(text: "Well Done!")// show win label
         // pause and add play Sound Effect
         if !SoundButton.SoundPaused {
             SKTAudio.sharedInstance().pauseBackgroundMusic()
@@ -93,10 +94,11 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
             view!.presentScene(scene)
         }
     }
-    // add win message "Nice job"
+    // add win message "Well Done!"
     func inGameMessage(text: String) {
         let message = MessageNode(message: text)
         message.position = CGPoint(x: frame.midX, y: frame.midY)
+        message.fontSize = 220.0
         addChild(message)
     }
 

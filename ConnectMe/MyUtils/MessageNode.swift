@@ -16,7 +16,7 @@ class MessageNode: SKLabelNode  {
         zPosition = 100
         let front = SKLabelNode(fontNamed: "MarkerFelt-Thin")
         front.text = message
-        front.fontSize = 256.0
+        front.fontSize = 220.0
         front.fontColor = SKColor.purple
         front.position = CGPoint(x: -2, y: -2)
         addChild(front)
