@@ -90,7 +90,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         Levels.lastUnlocked = max(Levels.lastUnlocked, GameScene.currentLevel)
 
         var game: SKScene?
-        if GameScene.currentLevel == Levels.levels.count {
+        if GameScene.currentLevel == Levels.levels.count+1  {
             game = SKScene(fileNamed: "WinScene")
         } else {
             game = SKScene(fileNamed: "GameScene")
