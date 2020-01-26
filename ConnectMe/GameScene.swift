@@ -86,21 +86,21 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     }
     // show next level
     func newGame() {
-        if GameScene.currentLevel == 3 {
-            if let game = SKScene(fileNamed: "WinScene") {
-                // Set the scale mode to scale to fit the window
-                game.scaleMode = .aspectFill
-                // Present the scene
-                scene?.view?.presentScene(game)
-            }
+        GameScene.currentLevel += 1
+        Levels.lastUnlocked = max(Levels.lastUnlocked, GameScene.currentLevel)
+
+        var game: SKScene?
+        if GameScene.currentLevel == Levels.levels.count {
+            game = SKScene(fileNamed: "WinScene")
         } else {
-            GameScene.currentLevel += 1
-                  if let scene = SKScene(fileNamed: "GameScene") {
-                      // Set the scale mode to scale to fit the window
-                      scene.scaleMode = .aspectFill
-                      // Present the scene
-                      view!.presentScene(scene)
-                  }
+            game = SKScene(fileNamed: "GameScene")
+        }
+        
+        if let scene = game {
+            // Set the scale mode to scale to fit the window
+            scene.scaleMode = .aspectFill
+            // Present the scene
+            view!.presentScene(scene)
         }
       
     }

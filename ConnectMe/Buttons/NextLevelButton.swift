@@ -17,13 +17,15 @@ class NextLevelButton : SKSpriteNode {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>,with event: UIEvent?) {
-        print("button pressed")
-        if let levels = SKScene(fileNamed: "LevelsSelector2"){
-            // Set the scale mode to scale to fit the window
-            levels.scaleMode = .aspectFill
-            // Present the scene
-            scene?.view?.presentScene(levels)
+        if LevelsScene.firstLevel + 20 < 100 {
+            if let levels = SKScene(fileNamed: "LevelsSelector"){
+                LevelsScene.firstLevel = LevelsScene.firstLevel + 20
+
+                // Set the scale mode to scale to fit the window
+                levels.scaleMode = .aspectFill
+                // Present the scene
+                scene?.view?.presentScene(levels)
+            }
         }
-        
     }
 }

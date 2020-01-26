@@ -35,6 +35,8 @@ class Levels {
        "3_144344334324322_2__342_",
        "421333322_433333_22_4_444",
     ]
+    
+    static var lastUnlocked: Int = 1
 
     static func loadLevel(grid:Grid, str: String) {
         let chars = Array(str)
