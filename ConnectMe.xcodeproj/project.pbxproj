@@ -51,6 +51,7 @@
 		9980972D23B44F9800C88848 /* LevelsSelector5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9980972C23B44F9800C88848 /* LevelsSelector5.sks */; };
 		9980972F23B450F300C88848 /* PrevLevelButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980972E23B450F300C88848 /* PrevLevelButton4.swift */; };
 		9980973123B4516F00C88848 /* NextLevelButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980973023B4516F00C88848 /* NextLevelButton4.swift */; };
+		99F1B4E623DE072E00A17664 /* WinScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99F1B4E523DE072E00A17664 /* WinScene.sks */; };
 		99FBB87223D67AA100C106EB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FBB87123D67AA100C106EB /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		9980972C23B44F9800C88848 /* LevelsSelector5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelsSelector5.sks; sourceTree = "<group>"; };
 		9980972E23B450F300C88848 /* PrevLevelButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevLevelButton4.swift; sourceTree = "<group>"; };
 		9980973023B4516F00C88848 /* NextLevelButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLevelButton4.swift; sourceTree = "<group>"; };
+		99F1B4E523DE072E00A17664 /* WinScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WinScene.sks; sourceTree = "<group>"; };
 		99FBB87123D67AA100C106EB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 				9958522523A9E9870031C671 /* Home.sks */,
 				9905DCE5233D6BE80032C53D /* Actions.sks */,
 				9926019D23AB39C10061FF15 /* LevelsSelector.sks */,
+				99F1B4E523DE072E00A17664 /* WinScene.sks */,
 				9980971A23B1A4C400C88848 /* LevelsSelector2.sks */,
 				9980972023B4217A00C88848 /* LevelsSelector3.sks */,
 				9980972623B4389E00C88848 /* LevelsSelector4.sks */,
@@ -289,6 +292,7 @@
 				9980971B23B1A4C400C88848 /* LevelsSelector2.sks in Resources */,
 				995D57DF23694DE600D1FE73 /* win.wav in Resources */,
 				995D57E223694DE600D1FE73 /* hitCatLady.wav in Resources */,
+				99F1B4E623DE072E00A17664 /* WinScene.sks in Resources */,
 				995D57E323694DE600D1FE73 /* backgroundMusic1.mp3 in Resources */,
 				9905DCE6233D6BE80032C53D /* Actions.sks in Resources */,
 			);

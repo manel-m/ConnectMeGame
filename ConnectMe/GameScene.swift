@@ -86,13 +86,23 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     }
     // show next level
     func newGame() {
-        GameScene.currentLevel += 1
-        if let scene = SKScene(fileNamed: "GameScene") {
-            // Set the scale mode to scale to fit the window
-            scene.scaleMode = .aspectFill
-            // Present the scene
-            view!.presentScene(scene)
+        if GameScene.currentLevel == 3 {
+            if let game = SKScene(fileNamed: "WinScene") {
+                // Set the scale mode to scale to fit the window
+                game.scaleMode = .aspectFill
+                // Present the scene
+                scene?.view?.presentScene(game)
+            }
+        } else {
+            GameScene.currentLevel += 1
+                  if let scene = SKScene(fileNamed: "GameScene") {
+                      // Set the scale mode to scale to fit the window
+                      scene.scaleMode = .aspectFill
+                      // Present the scene
+                      view!.presentScene(scene)
+                  }
         }
+      
     }
     // add win message "Well Done!"
     func inGameMessage(text: String) {
@@ -101,5 +111,5 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         message.fontSize = 220.0
         addChild(message)
     }
-
+    
 }
