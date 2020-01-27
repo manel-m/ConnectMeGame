@@ -70,9 +70,9 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         physicsBody!.categoryBitMask = PhysicsCategory.Edge
         
         // add Background Music
-        if !MusicButton.musicPaused {
-            SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
-        }
+//        if !MusicButton.musicPaused {
+//            SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
+//        }
         
         GameScene.canMove = true;
     }
@@ -90,7 +90,9 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     }
     // show next level
     func newGame() {
-        
+        if !MusicButton.musicPaused {
+            SKTAudio.sharedInstance().resumeBackgroundMusic()
+        }
         GameScene.currentLevel += 1
         Levels.lastUnlocked = max(Levels.lastUnlocked, GameScene.currentLevel)
 

@@ -15,9 +15,9 @@ class LevelsScene: SKScene {
 
     override func didMove(to: SKView) {
         
-        if !MusicButton.musicPaused {
-        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
-        }
+//        if !MusicButton.musicPaused {
+//        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
+//        }
         let label = LabelNode(message: "\(LevelsScene.firstLevel) - \(LevelsScene.firstLevel+19)")
         label.position = CGPoint (x:768, y:1700)
         label.fontColor = SKColor.orange
