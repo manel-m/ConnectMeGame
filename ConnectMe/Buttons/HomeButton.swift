@@ -17,7 +17,7 @@ class HomeButton : SKSpriteNode {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>,with event: UIEvent?) {
-        print("button pressed")
+        print("homebutton pressed")
         if let home = SKScene(fileNamed: "Home"){
             // Set the scale mode to scale to fit the window
             home.scaleMode = .aspectFill

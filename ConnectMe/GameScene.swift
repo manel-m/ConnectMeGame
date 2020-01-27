@@ -41,9 +41,10 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
             grid.position = CGPoint (x:frame.midX, y:frame.midY)
             grid.name = "grid"
             addChild(grid)
-            let label = LabelNode(message: "\(GameScene.currentLevel) / 100")
+            let label = LabelNode(message: "\(GameScene.currentLevel)/100")
             label.position = CGPoint (x:760, y:1850)
             label.fontColor = SKColor.orange
+            label.fontName = "Chalkduster"
             addChild(label)
             
             // add levels to the scene
@@ -69,7 +70,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         
         // add Background Music
         if !MusicButton.musicPaused {
-     SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
+     SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
         }
         
     }
@@ -79,7 +80,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         run(SKAction.afterDelay(3, runBlock: newGame)) // show the next level after 3 seconds
         inGameMessage(text: "Well Done!")// show win label
         // pause and add play Sound Effect
-        if !SoundButton.SoundPaused {
+        if !MusicButton.musicPaused {
             SKTAudio.sharedInstance().pauseBackgroundMusic()
             SKTAudio.sharedInstance().playSoundEffect("win.wav")
         }
@@ -108,7 +109,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     func inGameMessage(text: String) {
         let message = MessageNode(message: text)
         message.position = CGPoint(x: frame.midX, y: frame.midY)
-        message.fontSize = 220.0
+        message.fontSize = 150.0
         addChild(message)
     }
     

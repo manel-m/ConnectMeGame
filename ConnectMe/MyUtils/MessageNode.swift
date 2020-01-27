@@ -9,14 +9,14 @@
 import SpriteKit
 class MessageNode: SKLabelNode  {
     convenience init(message: String) {
-        self.init(fontNamed: "MarkerFelt-Thin")
+        self.init(fontNamed: "Chalkduster")
         text = message
-        fontSize = 256.0
+        fontSize = 150.0
         fontColor = SKColor.white
         zPosition = 100
-        let front = SKLabelNode(fontNamed: "MarkerFelt-Thin")
+        let front = SKLabelNode(fontNamed: "Chalkduster")
         front.text = message
-        front.fontSize = 220.0
+        front.fontSize = 150.0
         front.fontColor = SKColor.purple
         front.position = CGPoint(x: -2, y: -2)
         addChild(front)

@@ -10,6 +10,6 @@ import GameplayKit
 
 class Homescene: SKScene {
     override func didMove(to: SKView) {
-        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
+        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
     }
 }

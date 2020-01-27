@@ -14,7 +14,15 @@ class LevelsScene: SKScene {
     static var firstLevel: Int = 1
 
     override func didMove(to: SKView) {
-        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
+        
+        if !MusicButton.musicPaused {
+        SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
+        }
+        let label = LabelNode(message: "\(LevelsScene.firstLevel) - \(LevelsScene.firstLevel+19)")
+        label.position = CGPoint (x:768, y:1700)
+        label.fontColor = SKColor.orange
+        label.fontName = "Chalkduster"
+        addChild(label)
         
         // go through all buttons and update their state
         enumerateChildNodes(withName: "//*", using: { node, _ in

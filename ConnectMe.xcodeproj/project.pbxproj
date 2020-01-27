@@ -48,6 +48,7 @@
 		9980972F23B450F300C88848 /* PrevLevelButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980972E23B450F300C88848 /* PrevLevelButton4.swift */; };
 		9980973123B4516F00C88848 /* NextLevelButton4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980973023B4516F00C88848 /* NextLevelButton4.swift */; };
 		99C7209523DE42FD0030942C /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C7209423DE42FD0030942C /* RetryButton.swift */; };
+		99C7209723DE50410030942C /* WinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C7209623DE50410030942C /* WinScene.swift */; };
 		99F1B4E623DE072E00A17664 /* WinScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99F1B4E523DE072E00A17664 /* WinScene.sks */; };
 		99FBB87223D67AA100C106EB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FBB87123D67AA100C106EB /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		9980972E23B450F300C88848 /* PrevLevelButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevLevelButton4.swift; sourceTree = "<group>"; };
 		9980973023B4516F00C88848 /* NextLevelButton4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLevelButton4.swift; sourceTree = "<group>"; };
 		99C7209423DE42FD0030942C /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
+		99C7209623DE50410030942C /* WinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScene.swift; sourceTree = "<group>"; };
 		99F1B4E523DE072E00A17664 /* WinScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WinScene.sks; sourceTree = "<group>"; };
 		99FBB87123D67AA100C106EB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				9905DCE7233D6BE80032C53D /* GameScene.swift */,
 				9926018F23AAB1CA0061FF15 /* Homescene.swift */,
 				9926019923AB35220061FF15 /* LevelsScene.swift */,
+				99C7209623DE50410030942C /* WinScene.swift */,
 				9905DCE9233D6BE80032C53D /* GameViewController.swift */,
 				9905DCFB234ED5210032C53D /* BlockNode.swift */,
 				9905DCF923430F150032C53D /* Grid.swift */,
@@ -313,6 +316,7 @@
 				995D57D823693FE100D1FE73 /* MessageNode.swift in Sources */,
 				9980971D23B1A85900C88848 /* NextLevelButton.swift in Sources */,
 				9905DCEA233D6BE80032C53D /* GameViewController.swift in Sources */,
+				99C7209723DE50410030942C /* WinScene.swift in Sources */,
 				9905DCE2233D6BE80032C53D /* AppDelegate.swift in Sources */,
 				9905DCFA23430F150032C53D /* Grid.swift in Sources */,
 				9980972523B4255800C88848 /* PrevLevelButton2.swift in Sources */,
