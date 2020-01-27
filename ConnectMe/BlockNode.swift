@@ -24,31 +24,38 @@ class BlockNode: SKSpriteNode , EventListenerNode {
     // sritekit will call this method when player touchs block
     override func touchesBegan(_ touches: Set<UITouch>,
                                with event: UIEvent?) {
-        if let touch = touches.first {
-            // drag started, save current block position
-            beforeDrag = position;
-            let touchLocation = touch.location(in: GameScene.grid)
-            // set node position to current touch position
-            position = touchLocation;
-            zPosition = 2
+        if (GameScene.canMove) {
+            if let touch = touches.first {
+                // drag started, save current block position
+                beforeDrag = position;
+                let touchLocation = touch.location(in: GameScene.grid)
+                // set node position to current touch position
+                position = touchLocation;
+                zPosition = 2
+            }
         }
+
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            // move block with touch location
-            let touchLocation = touch.location(in: GameScene.grid)
-            position = touchLocation;
+        if (GameScene.canMove) {
+            if let touch = touches.first {
+                // move block with touch location
+                let touchLocation = touch.location(in: GameScene.grid)
+                position = touchLocation;
+            }
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if touches.first != nil {
-            // drag ended, block should be over target grid cell
-            if !GameScene.grid.moveBlock(block: self) {
-                position = beforeDrag
+        if (GameScene.canMove) {
+            if touches.first != nil {
+                // drag ended, block should be over target grid cell
+                if !GameScene.grid.moveBlock(block: self) {
+                    position = beforeDrag
+                }
+                zPosition = 1
             }
-            zPosition = 1
         }
     }
     

@@ -25,6 +25,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     
     static var grid: Grid! // reference of level grid
     static var currentLevel: Int = 1
+    static var canMove: Bool = true;
 
     var lastTouchLocation : CGPoint?
 
@@ -70,13 +71,15 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
         
         // add Background Music
         if !MusicButton.musicPaused {
-     SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
+            SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic1.mp3")
         }
         
+        GameScene.canMove = true;
     }
     
     // if the player win
     func gameWon() {
+        GameScene.canMove = false
         run(SKAction.afterDelay(3, runBlock: newGame)) // show the next level after 3 seconds
         inGameMessage(text: "Well Done!")// show win label
         // pause and add play Sound Effect
@@ -87,6 +90,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     }
     // show next level
     func newGame() {
+        
         GameScene.currentLevel += 1
         Levels.lastUnlocked = max(Levels.lastUnlocked, GameScene.currentLevel)
 
@@ -103,7 +107,6 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
             // Present the scene
             view!.presentScene(scene)
         }
-      
     }
     // add win message "Well Done!"
     func inGameMessage(text: String) {
