@@ -47,6 +47,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
             label.fontColor = SKColor.orange
             label.fontName = "Chalkduster"
             addChild(label)
+          
             
             // add levels to the scene
             GameScene.loadLevel(grid: grid)
@@ -81,6 +82,14 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     func gameWon() {
         GameScene.canMove = false
         run(SKAction.afterDelay(3, runBlock: newGame)) // show the next level after 3 seconds
+        enumerateChildNodes(withName: "//*", using: { node, _ in
+                 if let block = node as? BlockNode {
+                    let scaleDown = SKAction.scale(by: 0.2, duration: 0.25)
+                     let scaleUp = scaleDown.reversed()
+                     block.run(SKAction.sequence([scaleDown, scaleUp]))
+                  
+                 }
+             })
         inGameMessage(text: "Well Done!")// show win label
         // pause and add play Sound Effect
         if !MusicButton.musicPaused {
