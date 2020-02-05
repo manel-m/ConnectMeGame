@@ -23,7 +23,4 @@ class RetryButton : SKSpriteNode {
            scene?.view?.presentScene(game)
        }
     }
-    
-    
-
 }

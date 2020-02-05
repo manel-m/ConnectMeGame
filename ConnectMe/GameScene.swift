@@ -25,7 +25,7 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
     
     static var grid: Grid! // reference of level grid
     static var currentLevel: Int = 1
-    static var canMove: Bool = true;
+    static var canMove: Bool = true
 
     var lastTouchLocation : CGPoint?
 
@@ -94,7 +94,8 @@ class GameScene: SKScene, WinCallback , SKPhysicsContactDelegate {
             SKTAudio.sharedInstance().resumeBackgroundMusic()
         }
         GameScene.currentLevel += 1
-        Levels.lastUnlocked = max(Levels.lastUnlocked, GameScene.currentLevel)
+        //Levels.lastUnlocked = max(Levels.lastUnlocked, GameScene.currentLevel)
+         Levels.updateLastUnlocked(currentLevel: GameScene.currentLevel)
 
         var game: SKScene?
         if GameScene.currentLevel == Levels.levels.count+1  {

@@ -138,6 +138,20 @@ class Levels {
     
     static var lastUnlocked: Int = 1
 
+    static func loadSavedGame() {
+        let lastUnlocked = UserDefaults.standard.integer(forKey: "lastUnlocked")
+        print("Last Level: \(lastUnlocked)")
+        Levels.lastUnlocked = max(lastUnlocked, Levels.lastUnlocked)
+        GameScene.currentLevel = Levels.lastUnlocked
+    }
+
+    static func updateLastUnlocked(currentLevel: Int) {
+        if (currentLevel > Levels.lastUnlocked) {
+            Levels.lastUnlocked = currentLevel
+            UserDefaults.standard.set(currentLevel, forKey: "lastUnlocked")
+        }
+    }
+    
     static func loadLevel(grid:Grid, str: String) {
         let chars = Array(str)
         var idx = 0
