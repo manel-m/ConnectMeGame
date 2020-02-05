@@ -477,6 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.matougui.m.ConnectMe;
 				PRODUCT_NAME = ConnectMe;
 				SWIFT_VERSION = 5.0;
@@ -495,6 +496,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.matougui.m.ConnectMe;
 				PRODUCT_NAME = ConnectMe;
 				SWIFT_VERSION = 5.0;
